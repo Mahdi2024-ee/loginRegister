@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ورود و ثبت نام</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="auth-card" id="authCard">
+
+        <!-- Register -->
+        <section class="auth-form auth-form--register" id="registerForm">
+
+            <div class="auth-form__content">
+
+                <span class="auth-form__eyebrow">
+                    خوش آمدید
+                </span>
+
+                <h1>ثبت نام</h1>
+
+                <p class="auth-form__description">
+                    حساب کاربری خودت رو بساز
+                </p>
+
+                <input
+                    class="auth-input"
+                    type="email"
+                    placeholder="ایمیل"
+                >
+
+                <input
+                    class="auth-input"
+                    type="password"
+                    placeholder="رمز عبور"
+                >
+
+                <input
+                    class="auth-input"
+                    type="password"
+                    placeholder="تکرار رمز عبور"
+                >
+
+                <button class="auth-button" type="button">
+                    ثبت نام
+                </button>
+
+            </div>
+
+            <button
+                class="switch-button switch-button--login"
+                id="goToLogin"
+                type="button"
+            >
+                حساب داری؟ ورود
+            </button>
+
+        </section>
+
+
+        <!-- Login -->
+        <section class="auth-form auth-form--login" id="loginForm">
+
+            <button
+                class="switch-button switch-button--register"
+                id="goToRegister"
+                type="button"
+            >
+                حساب نداری؟ ثبت نام
+            </button>
+
+            <div class="auth-form__content">
+
+                <span class="auth-form__eyebrow">
+                    خوش برگشتی
+                </span>
+
+                <h1>ورود</h1>
+
+                <p class="auth-form__description">
+                    وارد حساب کاربری خودت شو
+                </p>
+
+                <input
+                    class="auth-input"
+                    type="email"
+                    placeholder="ایمیل"
+                >
+
+                <input
+                    class="auth-input"
+                    type="password"
+                    placeholder="رمز عبور"
+                >
+
+                <button class="auth-button" type="button">
+                    ورود
+                </button>
+
+            </div>
+        </section>
+        <!-- Animation Layer -->
+        <div
+            class="transition-layer"
+            id="transitionLayer"
+        ></div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
